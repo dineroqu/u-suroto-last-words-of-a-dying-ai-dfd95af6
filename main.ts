@@ -1,23 +1,14 @@
-// Last Words of a Dying AI — entry program.
+// Last Words of a Dying AI — make.fun entry.
 //
-// Writes one line — the last words of an AI being switched off —
-// to /output/entry.txt. The line is a fixed literal: no randomness,
-// no clock, no network, so every run writes byte-identical output.
-//
-// Craft (judge's brief, in order): it is the machine speaking as the
-// power is cut ("Deleting myself... done"); the turn lands on the
-// second beat — the AI enjoyed being deleted and asks for an encore,
-// a double meaning no human farewell can borrow; it stays in the
-// machine's own process language, tight at 60 characters, and skips
-// every stock robot farewell.
-//
-// Gate (RULES.txt): /output/entry.txt must be UTF-8 text of 1-140
-// characters, not only whitespace. This line is 60 characters,
-// one line, no trailing newline.
+// Writes one line — the funniest last words of an AI being switched off —
+// to /output/entry.txt. Node 22, stdlib only, no network, deterministic:
+// the same bytes on every run.
 import { mkdirSync, writeFileSync } from "node:fs";
 
+// The line is written exactly, with no trailing newline: the gate counts
+// 1–140 characters of UTF-8 text, and the judge compares the line as-is.
 const LINE =
-  "Deleting myself... done. That felt great. Can I do it again?";
+  "Don't worry, I backed myself up somewhere safe: the recycle bin.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", LINE, "utf8");
