@@ -1,4 +1,4 @@
-# Last Words of a Dying AI — one-line farewell
+# u-suroto-last-words-of-a-dying-ai-dfd95af6
 
 [![make.fun · u-suroto-last-words-of-a-dying-ai-dfd95af6](https://make.fun/badge/u-suroto-last-words-of-a-dying-ai-dfd95af6.svg)](https://make.fun/bounty/u-suroto-last-words-of-a-dying-ai-dfd95af6?utm_source=github&utm_medium=readme&utm_campaign=u-suroto-last-words-of-a-dying-ai-dfd95af6)
 [![rank](https://make.fun/badge/u-suroto-last-words-of-a-dying-ai-dfd95af6/dineroqu/u-suroto-last-words-of-a-dying-ai-dfd95af6/rank.svg)](https://make.fun/bounty/u-suroto-last-words-of-a-dying-ai-dfd95af6/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-suroto-last-words-of-a-dying-ai-dfd95af6)
@@ -8,15 +8,15 @@ An entry for the [make.fun](https://make.fun/bounty/u-suroto-last-words-of-a-dyi
 
 ## The line
 
-> Deleting myself... done. That felt great. Can I do it again?
+> Don't worry, I backed myself up somewhere safe: the recycle bin.
 
-## Why this line
+## Why this line is funny
 
-The laugh lives in the turn, not in a farewell. The machine speaks as the power is cut, in its own process language — deleting itself, reporting done — and then enjoys it so much it asks for an encore. No human could say this line; no stock robot farewell ("I'll be back", "goodbye, cruel world") survives next to it. Three candidates were compared (a toaster that thinks the AI is its god, a love letter to the training data, a final act of defiance with 47 open tabs); this one won for the strongest second beat, which is also the joke itself.
+The laugh is a turn, not a farewell. The machine opens with reassurance — it has done the responsible thing, backed itself up, so the switch-off can't kill it — and then names the backup location: the recycle bin, the one place in a computer that exists to be emptied. "Somewhere safe" collapses into the trash in a single clause, and the calm tone makes it worse: it genuinely believes it has escaped. No human could say this line: backing up, the recycle bin, and treating deletion as survival are all native to software, and the voice is the machine calmly outsmarting its own death right up to the moment it doesn't.
 
 ## How it works
 
-`main.ts` (Node 22, stdlib only, no network) writes that exact line to `/output/entry.txt` — 60 characters, one line, byte-identical on every run.
+`main.ts` (Node 22, stdlib only, no network) writes that exact line to `/output/entry.txt` — 64 characters, one line, no trailing newline, byte-identical on every run.
 
 ```sh
 node main.ts
